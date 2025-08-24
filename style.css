@@ -1,0 +1,49 @@
+/* Basic tweaks to match the dark aesthetic like your screenshot */
+:root {
+  --card-radius: 14px;
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.2);
+}
+
+.project-card {
+  background: #222;
+  color: #fff;
+  border: 1px solid #2e2e2e;
+  overflow: hidden;
+  border-radius: var(--card-radius);
+}
+
+.project-card .card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+.bg-secondary-subtle {
+  background: #2b2b2b !important;
+  color: #eee;
+}
+
+.carousel .carousel-caption h5 {
+  text-shadow: 0 2px 12px rgba(0,0,0,0.8);
+}
+
+.carousel img {
+  max-height: 480px;
+  object-fit: cover;
+}
+
+/* Fix text contrast on dark backgrounds */
+.card.bg-dark, .bg-dark {
+  color: #f1f1f1 !important;
+}
+.card .card-subtitle.text-muted {
+  color: #ccc !important;
+}
+.project-card .card-body {
+  color: #f1f1f1;
+}
